@@ -1,0 +1,164 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: relative;
+  background-color: white;
+  z-index: 1;
+  padding: 9.5px 40px;
+  display: grid;
+  grid-template-columns: 75px 80px;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.header img {
+  width: 78px;
+}
+
+.general_container {
+  margin: 0;
+  min-height: 100vh;
+  background: url(../images/car-image.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.general_container::before {
+  content: "";
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  min-height: 111%;
+
+  background: linear-gradient(
+    90deg,
+    rgba(94, 18, 174, 1) 0%,
+    rgba(24, 144, 255, 1) 100%
+  );
+  opacity: 0.5;
+}
+
+.ProgressBar {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 30px 0;
+  color: white;
+  font-weight: bold;
+}
+
+.ProgressBar hr {
+  -webkit-transform: rotate(90deg);
+  border: 2px solid #5e12ae;
+  border-radius: 10px;
+}
+
+.ProgressBar img {
+  width: 50px;
+}
+
+.register__container {
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  min-height: 500px;
+  margin-bottom: 70px;
+  padding: 50px 60px 40px;
+  width: 350px;
+}
+
+.register__container h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #42ce9f;
+}
+
+.register__container-form p {
+  color: gray;
+  padding: 10px 0;
+}
+
+input {
+  background-color: #f1efef;
+  border-radius: 5px;
+  border: white;
+  color: gray;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 0px 20px;
+  width: 85%;
+}
+
+.register__container-form h3 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 15px 0;
+}
+
+.container_button {
+  position: relative;
+}
+
+.container_button img {
+  width: 100px;
+  position: absolute;
+  bottom: -1px;
+}
+
+.container_button svg {
+  position: relative;
+  z-index: 1;
+  right: 30px;
+  bottom: 2px;
+  animation: arrow 1.5s ease-in-out infinite;
+}
+
+.container_button a:hover svg {
+  animation: arrow 1.5s ease-out infinite;
+}
+
+.button {
+  background-color: #ff4a04;
+  padding: 25px 40px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 24%;
+  margin-top: 30px;
+  outline: none;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translate(50px, 0px);
+  }
+
+  50% {
+    transform: translate(60px, 0px);
+  }
+
+  100% {
+    transform: translate(50px, 0px);
+  }
+}

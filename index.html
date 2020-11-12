@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <!--Favicon-->
+    <link rel="icon" href="./images/favicon-32x32.png" />
+    <!-- Title -->
+    <title>Calcula tu descuento</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#"
+        ><img
+          src="https://soat.grupor5.com/static/media/r5logo.f921bc01.svg"
+          alt="logo"
+      /></a>
+      <a href="#"
+        ><img
+          src="https://soat.grupor5.com/static/media/axa-colpatria.14e43578.png"
+          alt="logo axa-colpatria"
+      /></a>
+    </header>
+    <div class="general_container">
+      <div class="general__container-back">
+        <section class="ProgressBar">
+          <div class="data" id="active">
+            <img src="./images/Icono1-verde-blanco.svg" alt="" />
+            <p>Tus datos</p>
+          </div>
+          <hr />
+          <div class="payment no-active">
+            <img src="./images/Icono2-morado.svg" alt="" />
+            <p>Pago</p>
+          </div>
+          <hr />
+          <div class="soat no-active">
+            <img src="./images/Icono3-morado.svg" alt="" />
+            <p>¡Recibe tu SOAT!</p>
+          </div>
+        </section>
+        <section class="register">
+          <section class="register__container">
+            <h2>
+              Por favor ingresa los siguientes datos para calcular tu descuento
+            </h2>
+            <form class="register__container-form" id="form">
+              <p>Email</p>
+              <input
+                class="input"
+                type="email"
+                placeholder="nombre@email.com"
+                id="email"
+              />
+              <p>Celular</p>
+              <input
+                class="input"
+                type="tel"
+                placeholder="123456789"
+                id="phone"
+              />
+              <h3>La veracidad de tus datos impacta tu descuento.</h3>
+              <div class="container_button">
+                <img src="images/gift-icon.svg" alt="Icono" />
+                <button class="button" type="button" onclick="getData()">
+                  Calcular descuento
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 171 171"
+                    style="fill: #000000"
+                  >
+                    <g
+                      fill="none"
+                      fill-rule="nonzero"
+                      stroke="none"
+                      stroke-width="1"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      stroke-miterlimit="10"
+                      stroke-dasharray=""
+                      stroke-dashoffset="0"
+                      font-family="none"
+                      font-weight="none"
+                      font-size="none"
+                      text-anchor="none"
+                      style="mix-blend-mode: normal"
+                    >
+                      <path
+                        d="M0,171.98761v-171.98761h171.98761v171.98761z"
+                        fill="none"
+                      ></path>
+                      <g fill="#ffffff">
+                        <path
+                          d="M28.5,10.6875c-1.82311,0 -3.64644,0.69625 -5.0376,2.0874c-2.78231,2.78231 -2.78231,7.29288 0,10.0752l62.6499,62.6499l-62.6499,62.6499c-2.78231,2.78231 -2.78231,7.29288 0,10.07519c1.39294,1.39294 3.2136,2.0874 5.0376,2.0874c1.824,0 3.64466,-0.69447 5.0376,-2.0874l67.6875,-67.6875c2.78231,-2.78231 2.78231,-7.29288 0,-10.07519l-67.6875,-67.6875c-1.39116,-1.39116 -3.21449,-2.0874 -5.0376,-2.0874zM74.8125,10.6875c-1.82311,0 -3.64644,0.69625 -5.0376,2.0874c-2.78231,2.78231 -2.78231,7.29288 0,10.0752l62.6499,62.6499l-62.6499,62.6499c-2.78231,2.78231 -2.78231,7.29288 0,10.07519c1.39294,1.39294 3.2136,2.0874 5.0376,2.0874c1.824,0 3.64466,-0.69447 5.0376,-2.0874l67.6875,-67.6875c2.78231,-2.78231 2.78231,-7.29288 0,-10.07519l-67.6875,-67.6875c-1.39115,-1.39116 -3.21449,-2.0874 -5.0376,-2.0874z"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </section>
+        </section>
+        <footer class="footer"></footer>
+      </div>
+    </div>
+
+    <!--Scripts-->
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
